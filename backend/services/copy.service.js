@@ -14,7 +14,7 @@ const tonePrompts = {
 
 export const generateCopy = async (prompt, tone) => {
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro" });
 
     const copyPrompt = `
     Generate a social media caption and relevant hashtags for an ad campaign based on this prompt: "${prompt}"
